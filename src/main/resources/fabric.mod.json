@@ -15,7 +15,7 @@
 	"icon": "assets/potion-mod/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": [
+		"server": [
 			{
 				"value": "xyz.hoenle.potionmod.PotionMod",
 				"adapter": "kotlin"

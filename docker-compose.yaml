@@ -11,3 +11,5 @@ services:
       - 25565:25565
     environment:
       EULA: "TRUE"
+      MODE: "creative"
+      MOTD: "Minecraft Potion mod development server"
