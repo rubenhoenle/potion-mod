@@ -26,18 +26,13 @@ class PotionLightColorMapper {
 
     fun getPotionLightColor(potion: ItemStack): PotionLightColor {
         val potionContent = potion.get(DataComponentTypes.POTION_CONTENTS)
-        potionContent?.let {
+        potionContent?.potion?.get().let {
             registeredPotions.forEach { (potionType, color) ->
-                it.potion?.get()?.let {
                     if (it == potionType) {
                         return color
                     }
-                }
             }
         }
-        /*if (potionContent?.potion == Potions.HEALING) {
-            return PotionLightColor.RED
-        }*/
         return defaultColor
     }
 }

@@ -17,5 +17,8 @@ ENV FABRIC_LAUNCHER_VERSION="1.0.1"
 ENV FABRIC_LOADER_VERSION="0.16.10"
 ENV MODRINTH_DOWNLOAD_DEPENDENCIES="required"
 ENV MODRINTH_PROJECTS="fabric-api,fabric-language-kotlin"
+
+EXPOSE 44533
+
 COPY --from=mod /app/build/libs/potion-mod-1.0.0.jar /mods/potion-mod-1.0.0.jar
 

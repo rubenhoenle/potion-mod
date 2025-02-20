@@ -9,6 +9,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - 25565:25565
+      - 44533:44533
     environment:
       EULA: "TRUE"
       MODE: "creative"
